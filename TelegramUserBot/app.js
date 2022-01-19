@@ -40,12 +40,12 @@ bot.hears('menu', ctx => { //change 'animals' variable
     })
 })
 
-//change method from return image of dog to my file
+
 bot.action('details', ctx=> {       //details variable
 bot.telegram.sendMessage(ctx.chat.id, "Name: Simanye Magwa\nAge:22\nQualification: NDip:Information Technology\n Home Language:Xhosa\n Other Languages:English , Afrikaans\n to view more details,download my cv."
 )
 })
-//change method from return image of cat to my file
+
 bot.action('cv',ctx=>{
     bot.telegram.sendDocument(ctx.chat.id, {
         source: "res/cvofsimanye magwa.pdf"
