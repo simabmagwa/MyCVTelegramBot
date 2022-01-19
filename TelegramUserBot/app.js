@@ -11,7 +11,7 @@ bot.telegram.sendMessage(ctx.chat.id, 'Hello, My name is Simanye Magwa and this 
 })
 
 //method that displays inline keyboard buttons
-bot.hears('menu', ctx => { //change 'animals' variable
+bot.hears('menu', ctx => { 
     console.log(ctx.from)
     let menuMessage='Choose an option from the menu'; //string/message that'll display
     ctx.deleteMessage();
