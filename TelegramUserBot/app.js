@@ -20,7 +20,7 @@ bot.hears('menu', ctx => { //change 'animals' variable
             inline_keyboard: [
                 [{
                     text: "View My Details",
-                    callback_data: 'dog'        //change 'dog 'variable 
+                    callback_data: 'details'        //change 'dog 'variable 
                 },
                 {
                     text: "Download CV",
@@ -41,7 +41,7 @@ bot.hears('menu', ctx => { //change 'animals' variable
 })
 
 //change method from return image of dog to my file
-bot.action('dog', ctx=> {       //change 'dog' variable
+bot.action('details', ctx=> {       //change 'dog' variable
 bot.telegram.sendMessage(ctx.chat.id, "Name: Simanye Magwa\nAge:22\nQualification: NDip:Information Technology\n Home Language:Xhosa\n Other Languages:English , Afrikaans\n to view more details,download my cv."
 )
 })
